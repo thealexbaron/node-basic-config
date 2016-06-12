@@ -1,0 +1,28 @@
+{
+  "name": "basic-config",
+  "version": "0.0.1",
+  "description": "Super simple config",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thealexbaron/node-basic-config"
+  },
+  "keywords": [
+    "config",
+    "simple",
+    "basic"
+  ],
+  "author": "Alex Baron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thealexbaron/node-basic-config/issues"
+  },
+  "homepage": "https://github.com/thealexbaron/node-basic-config",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
