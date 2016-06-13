@@ -48,6 +48,24 @@ describe('Config', function() {
 
             assert.equal(config.get('someKey', 'someNestedKey'), 'someDevNestedVal')
         })
+
+        it('should retrieve parent key even if config key is false', function() {
+            config.init({someKey: false})
+
+            assert.equal(config.get('someKey'), false)
+        })
+
+        it('should retrieve parent key even if config key is empty string', function() {
+            config.init({someKey: ''})
+
+            assert.equal(config.get('someKey'), '')
+        })
+
+        it('should retrieve nested key even if config key is false', function() {
+            config.init({someKey: {nestedKey: false}})
+
+            assert.equal(config.get('someKey', 'nestedKey'), false)
+        })
     })
 
     describe('#init()', function() {
