@@ -50,7 +50,7 @@ describe('Config', function() {
         })
 
         it('should retrieve parent key even if config key is false', function() {
-            config.init({someKey: false})
+            config.init({someKey: false}, {})
 
             assert.equal(config.get('someKey'), false)
         })

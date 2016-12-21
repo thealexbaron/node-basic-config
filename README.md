@@ -36,3 +36,6 @@ key does not exist, an error will be thrown.
         config.get('mailServiceCredentials', 'username') // development@user.com
     )
 
+# development
+
+Install mocha `npm install mocha -g`
